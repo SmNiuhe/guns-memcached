@@ -1,0 +1,591 @@
+2019-02-06 14:36:29.864  INFO 35652 --- [main] c.s.guns.rest.GunsRestApplication        : Starting GunsRestApplication on localhost with PID 35652 (/Users/smniuhe/IdeaProjects/guns-memcached/guns-rest/target/classes started by mac in /Users/smniuhe/IdeaProjects/guns-memcached)
+2019-02-06 14:36:29.875  INFO 35652 --- [main] c.s.guns.rest.GunsRestApplication        : No active profile set, falling back to default profiles: default
+2019-02-06 14:36:30.039  INFO 35652 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@77fbd92c: startup date [Wed Feb 06 14:36:30 CST 2019]; root of context hierarchy
+2019-02-06 14:36:30.907  WARN 35652 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.stylefeng.guns.rest.*.dao, com.stylefeng.guns.rest.common.persistence.dao]' package. Please check your configuration.
+2019-02-06 14:36:31.011  INFO 35652 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'paginationInterceptor' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=mybatisPlusConfig; factoryMethodName=paginationInterceptor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/guns/rest/config/MybatisPlusConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=cn.stylefeng.roses.core.config.MybaitsPlusAutoConfiguration; factoryMethodName=paginationInterceptor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/roses/core/config/MybaitsPlusAutoConfiguration.class]]
+2019-02-06 14:36:31.344  INFO 35652 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'error' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=defaultErrorView; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/error/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=cn.stylefeng.roses.core.config.WebAutoConfiguration; factoryMethodName=error; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/roses/core/config/WebAutoConfiguration.class]]
+2019-02-06 14:36:31.345  INFO 35652 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'requestMappingHandlerAdapter' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration; factoryMethodName=requestMappingHandlerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=cn.stylefeng.roses.core.config.WebAutoConfiguration; factoryMethodName=requestMappingHandlerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/roses/core/config/WebAutoConfiguration.class]]
+2019-02-06 14:36:32.164  INFO 35652 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-02-06 14:36:32.187  INFO 35652 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-06 14:36:32.188  INFO 35652 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2019-02-06 14:36:32.197  INFO 35652 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/smniuhe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-02-06 14:36:32.334  INFO 35652 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-06 14:36:32.335  INFO 35652 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2296 ms
+2019-02-06 14:36:32.612  INFO 35652 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-02-06 14:36:32.616  INFO 35652 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-06 14:36:32.616  INFO 35652 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-06 14:36:32.617  INFO 35652 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-06 14:36:32.617  INFO 35652 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-06 14:36:32.617  INFO 35652 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'jwtAuthenticationTokenFilter' to: [/*]
+2019-02-06 14:36:32.701  WARN 35652 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dbValidator': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.stylefeng.guns.rest.common.persistence.dao.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-02-06 14:36:32.704  INFO 35652 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-02-06 14:36:32.724  INFO 35652 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-02-06 14:36:32.853 ERROR 35652 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userMapper in cn.stylefeng.guns.rest.modular.auth.validator.impl.DbValidator required a bean of type 'cn.stylefeng.guns.rest.common.persistence.dao.UserMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'cn.stylefeng.guns.rest.common.persistence.dao.UserMapper' in your configuration.
+
+2019-02-06 14:38:25.914  INFO 35655 --- [main] c.s.guns.rest.GunsRestApplication        : Starting GunsRestApplication on localhost with PID 35655 (/Users/smniuhe/IdeaProjects/guns-memcached/guns-rest/target/classes started by mac in /Users/smniuhe/IdeaProjects/guns-memcached)
+2019-02-06 14:38:25.920  INFO 35655 --- [main] c.s.guns.rest.GunsRestApplication        : No active profile set, falling back to default profiles: default
+2019-02-06 14:38:26.064  INFO 35655 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@35e2d654: startup date [Wed Feb 06 14:38:26 CST 2019]; root of context hierarchy
+2019-02-06 14:38:26.773  WARN 35655 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.stylefeng.guns.rest.*.dao, com.stylefeng.guns.rest.common.persistence.dao]' package. Please check your configuration.
+2019-02-06 14:38:26.878  INFO 35655 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'paginationInterceptor' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=mybatisPlusConfig; factoryMethodName=paginationInterceptor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/guns/rest/config/MybatisPlusConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=cn.stylefeng.roses.core.config.MybaitsPlusAutoConfiguration; factoryMethodName=paginationInterceptor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/roses/core/config/MybaitsPlusAutoConfiguration.class]]
+2019-02-06 14:38:27.152  INFO 35655 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'error' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=defaultErrorView; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/error/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=cn.stylefeng.roses.core.config.WebAutoConfiguration; factoryMethodName=error; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/roses/core/config/WebAutoConfiguration.class]]
+2019-02-06 14:38:27.152  INFO 35655 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'requestMappingHandlerAdapter' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration; factoryMethodName=requestMappingHandlerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=cn.stylefeng.roses.core.config.WebAutoConfiguration; factoryMethodName=requestMappingHandlerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/roses/core/config/WebAutoConfiguration.class]]
+2019-02-06 14:38:27.933  INFO 35655 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-02-06 14:38:27.950  INFO 35655 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-06 14:38:27.950  INFO 35655 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2019-02-06 14:38:27.954  INFO 35655 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/smniuhe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-02-06 14:38:28.022  INFO 35655 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-06 14:38:28.022  INFO 35655 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1958 ms
+2019-02-06 14:38:28.169  INFO 35655 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-02-06 14:38:28.174  INFO 35655 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-06 14:38:28.175  INFO 35655 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-06 14:38:28.177  INFO 35655 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-06 14:38:28.178  INFO 35655 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-06 14:38:28.178  INFO 35655 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'jwtAuthenticationTokenFilter' to: [/*]
+2019-02-06 14:38:28.279  WARN 35655 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dbValidator': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.stylefeng.guns.rest.common.persistence.dao.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-02-06 14:38:28.282  INFO 35655 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-02-06 14:38:28.302  INFO 35655 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-02-06 14:38:28.419 ERROR 35655 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userMapper in cn.stylefeng.guns.rest.modular.auth.validator.impl.DbValidator required a bean of type 'cn.stylefeng.guns.rest.common.persistence.dao.UserMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'cn.stylefeng.guns.rest.common.persistence.dao.UserMapper' in your configuration.
+
+2019-02-06 14:54:51.303  INFO 35668 --- [main] c.s.guns.rest.GunsRestApplication        : Starting GunsRestApplication on localhost with PID 35668 (/Users/smniuhe/IdeaProjects/guns-memcached/guns-rest/target/classes started by mac in /Users/smniuhe/IdeaProjects/guns-memcached)
+2019-02-06 14:54:51.310  INFO 35668 --- [main] c.s.guns.rest.GunsRestApplication        : No active profile set, falling back to default profiles: default
+2019-02-06 14:54:51.439  INFO 35668 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@55183b20: startup date [Wed Feb 06 14:54:51 CST 2019]; root of context hierarchy
+2019-02-06 14:54:52.192  WARN 35668 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.stylefeng.guns.rest.*.dao, com.stylefeng.guns.rest.common.persistence.dao]' package. Please check your configuration.
+2019-02-06 14:54:52.301  INFO 35668 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'paginationInterceptor' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=mybatisPlusConfig; factoryMethodName=paginationInterceptor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/guns/rest/config/MybatisPlusConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=cn.stylefeng.roses.core.config.MybaitsPlusAutoConfiguration; factoryMethodName=paginationInterceptor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/roses/core/config/MybaitsPlusAutoConfiguration.class]]
+2019-02-06 14:54:52.576  INFO 35668 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'error' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=defaultErrorView; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/error/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=cn.stylefeng.roses.core.config.WebAutoConfiguration; factoryMethodName=error; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/roses/core/config/WebAutoConfiguration.class]]
+2019-02-06 14:54:52.577  INFO 35668 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'requestMappingHandlerAdapter' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration; factoryMethodName=requestMappingHandlerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=cn.stylefeng.roses.core.config.WebAutoConfiguration; factoryMethodName=requestMappingHandlerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/roses/core/config/WebAutoConfiguration.class]]
+2019-02-06 14:54:53.531  INFO 35668 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-02-06 14:54:53.669  INFO 35668 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-06 14:54:53.670  INFO 35668 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2019-02-06 14:54:53.689  INFO 35668 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/smniuhe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-02-06 14:54:53.910  INFO 35668 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-06 14:54:53.912  INFO 35668 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2473 ms
+2019-02-06 14:54:54.281  INFO 35668 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-02-06 14:54:54.285  INFO 35668 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-06 14:54:54.286  INFO 35668 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-06 14:54:54.286  INFO 35668 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-06 14:54:54.286  INFO 35668 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-06 14:54:54.286  INFO 35668 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'jwtAuthenticationTokenFilter' to: [/*]
+2019-02-06 14:54:54.385  WARN 35668 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dbValidator': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.stylefeng.guns.rest.common.persistence.dao.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-02-06 14:54:54.387  INFO 35668 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-02-06 14:54:54.410  INFO 35668 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-02-06 14:54:54.564 ERROR 35668 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userMapper in cn.stylefeng.guns.rest.modular.auth.validator.impl.DbValidator required a bean of type 'cn.stylefeng.guns.rest.common.persistence.dao.UserMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'cn.stylefeng.guns.rest.common.persistence.dao.UserMapper' in your configuration.
+
+2019-02-06 15:02:46.676  INFO 35699 --- [main] c.s.guns.rest.GunsRestApplication        : Starting GunsRestApplication on localhost with PID 35699 (/Users/smniuhe/IdeaProjects/guns-memcached/guns-rest/target/classes started by mac in /Users/smniuhe/IdeaProjects/guns-memcached)
+2019-02-06 15:02:46.680  INFO 35699 --- [main] c.s.guns.rest.GunsRestApplication        : No active profile set, falling back to default profiles: default
+2019-02-06 15:02:46.846  INFO 35699 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@55183b20: startup date [Wed Feb 06 15:02:46 CST 2019]; root of context hierarchy
+2019-02-06 15:02:47.864  INFO 35699 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'paginationInterceptor' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=mybatisPlusConfig; factoryMethodName=paginationInterceptor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/guns/rest/config/MybatisPlusConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=cn.stylefeng.roses.core.config.MybaitsPlusAutoConfiguration; factoryMethodName=paginationInterceptor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/roses/core/config/MybaitsPlusAutoConfiguration.class]]
+2019-02-06 15:02:48.133  INFO 35699 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'error' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=defaultErrorView; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/error/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=cn.stylefeng.roses.core.config.WebAutoConfiguration; factoryMethodName=error; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/roses/core/config/WebAutoConfiguration.class]]
+2019-02-06 15:02:48.134  INFO 35699 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'requestMappingHandlerAdapter' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration; factoryMethodName=requestMappingHandlerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=cn.stylefeng.roses.core.config.WebAutoConfiguration; factoryMethodName=requestMappingHandlerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/roses/core/config/WebAutoConfiguration.class]]
+2019-02-06 15:02:48.914  INFO 35699 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-02-06 15:02:48.931  INFO 35699 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-06 15:02:48.932  INFO 35699 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2019-02-06 15:02:48.936  INFO 35699 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/smniuhe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-02-06 15:02:49.005  INFO 35699 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-06 15:02:49.005  INFO 35699 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2159 ms
+2019-02-06 15:02:49.173  INFO 35699 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-02-06 15:02:49.178  INFO 35699 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-06 15:02:49.179  INFO 35699 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-06 15:02:49.179  INFO 35699 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-06 15:02:49.179  INFO 35699 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-06 15:02:49.180  INFO 35699 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'jwtAuthenticationTokenFilter' to: [/*]
+2019-02-06 15:02:53.884 ERROR 35699 --- [main] com.alibaba.druid.pool.DruidDataSource   : init datasource error, url: jdbc:mysql://127.0.0.1:3306/guns_rest?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
+
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:108) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:87) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:61) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:71) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:932) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:857) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:444) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:230) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:226) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:786) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:786) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:861) ~[druid-1.1.10.jar:1.1.10]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1827) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1770) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1698) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:579) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:815) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:721) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:470) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1250) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1424) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1326) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at cn.stylefeng.guns.rest.GunsRestApplication.main(GunsRestApplication.java:10) ~[classes/:na]
+Caused by: com.mysql.cj.exceptions.CJException: Access denied for user 'root'@'localhost' (using password: YES)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_201]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_201]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:59) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:103) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:149) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:127) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:819) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:744) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:713) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:135) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:553) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:217) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1411) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:165) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:876) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	... 76 common frames omitted
+
+2019-02-06 15:02:53.894 ERROR 35699 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} init error
+
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:108) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:87) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:61) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:71) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:932) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:857) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:444) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:230) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:226) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:786) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:786) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:861) ~[druid-1.1.10.jar:1.1.10]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1827) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1770) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1698) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:579) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:815) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:721) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:470) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1250) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1424) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1326) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at cn.stylefeng.guns.rest.GunsRestApplication.main(GunsRestApplication.java:10) ~[classes/:na]
+Caused by: com.mysql.cj.exceptions.CJException: Access denied for user 'root'@'localhost' (using password: YES)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_201]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_201]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:59) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:103) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:149) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:127) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:819) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:744) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:713) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:135) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:553) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:217) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1411) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:165) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:876) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	... 76 common frames omitted
+
+2019-02-06 15:02:53.895  INFO 35699 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-02-06 15:02:53.897  WARN 35699 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dbValidator': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [/Users/smniuhe/IdeaProjects/guns-memcached/guns-rest/target/classes/cn/stylefeng/guns/rest/common/persistence/dao/UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/spring/boot/starter/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [cn/stylefeng/roses/core/config/MybaitsPlusAutoConfiguration.class]: Invocation of init method failed; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+2019-02-06 15:02:53.900  INFO 35699 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-02-06 15:02:53.912  INFO 35699 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-02-06 15:02:53.922 ERROR 35699 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dbValidator': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [/Users/smniuhe/IdeaProjects/guns-memcached/guns-rest/target/classes/cn/stylefeng/guns/rest/common/persistence/dao/UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/spring/boot/starter/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [cn/stylefeng/roses/core/config/MybaitsPlusAutoConfiguration.class]: Invocation of init method failed; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:587) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at cn.stylefeng.guns.rest.GunsRestApplication.main(GunsRestApplication.java:10) [classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [/Users/smniuhe/IdeaProjects/guns-memcached/guns-rest/target/classes/cn/stylefeng/guns/rest/common/persistence/dao/UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/spring/boot/starter/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [cn/stylefeng/roses/core/config/MybaitsPlusAutoConfiguration.class]: Invocation of init method failed; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1439) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/spring/boot/starter/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [cn/stylefeng/roses/core/config/MybaitsPlusAutoConfiguration.class]: Invocation of init method failed; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:729) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:470) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1250) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1424) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	... 30 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [cn/stylefeng/roses/core/config/MybaitsPlusAutoConfiguration.class]: Invocation of init method failed; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1702) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:579) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:815) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:721) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	... 43 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:108) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:87) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:61) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:71) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:932) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:857) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:444) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:230) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:226) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:786) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:786) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:861) ~[druid-1.1.10.jar:1.1.10]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1827) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1770) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1698) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	... 54 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJException: Access denied for user 'root'@'localhost' (using password: YES)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_201]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_201]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:59) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:103) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:149) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:127) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:819) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:744) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:713) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:135) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:553) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:217) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1411) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:165) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:876) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	... 76 common frames omitted
+
+2019-02-06 15:03:26.246  INFO 35701 --- [main] c.s.guns.rest.GunsRestApplication        : Starting GunsRestApplication on localhost with PID 35701 (/Users/smniuhe/IdeaProjects/guns-memcached/guns-rest/target/classes started by mac in /Users/smniuhe/IdeaProjects/guns-memcached)
+2019-02-06 15:03:26.251  INFO 35701 --- [main] c.s.guns.rest.GunsRestApplication        : No active profile set, falling back to default profiles: default
+2019-02-06 15:03:26.338  INFO 35701 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1bd4fdd: startup date [Wed Feb 06 15:03:26 CST 2019]; root of context hierarchy
+2019-02-06 15:03:27.341  INFO 35701 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'paginationInterceptor' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=mybatisPlusConfig; factoryMethodName=paginationInterceptor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/guns/rest/config/MybatisPlusConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=cn.stylefeng.roses.core.config.MybaitsPlusAutoConfiguration; factoryMethodName=paginationInterceptor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/roses/core/config/MybaitsPlusAutoConfiguration.class]]
+2019-02-06 15:03:27.610  INFO 35701 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'error' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=defaultErrorView; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/error/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=cn.stylefeng.roses.core.config.WebAutoConfiguration; factoryMethodName=error; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/roses/core/config/WebAutoConfiguration.class]]
+2019-02-06 15:03:27.621  INFO 35701 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'requestMappingHandlerAdapter' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration; factoryMethodName=requestMappingHandlerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=cn.stylefeng.roses.core.config.WebAutoConfiguration; factoryMethodName=requestMappingHandlerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/roses/core/config/WebAutoConfiguration.class]]
+2019-02-06 15:03:28.446  INFO 35701 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-02-06 15:03:28.465  INFO 35701 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-06 15:03:28.466  INFO 35701 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2019-02-06 15:03:28.470  INFO 35701 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/smniuhe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-02-06 15:03:28.537  INFO 35701 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-06 15:03:28.537  INFO 35701 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2199 ms
+2019-02-06 15:03:28.684  INFO 35701 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-02-06 15:03:28.691  INFO 35701 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-06 15:03:28.691  INFO 35701 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-06 15:03:28.692  INFO 35701 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-06 15:03:28.693  INFO 35701 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-06 15:03:28.694  INFO 35701 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'jwtAuthenticationTokenFilter' to: [/*]
+2019-02-06 15:03:29.328  INFO 35701 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-02-06 15:03:29.760  INFO 35701 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1bd4fdd: startup date [Wed Feb 06 15:03:26 CST 2019]; root of context hierarchy
+2019-02-06 15:03:29.825  INFO 35701 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-06 15:03:29.859  INFO 35701 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/auth]}" onto public org.springframework.http.ResponseEntity<?> cn.stylefeng.guns.rest.modular.auth.controller.AuthController.createAuthenticationToken(cn.stylefeng.guns.rest.modular.auth.controller.dto.AuthRequest)
+2019-02-06 15:03:29.860  INFO 35701 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public org.springframework.http.ResponseEntity cn.stylefeng.guns.rest.modular.example.ExampleController.hello(cn.stylefeng.guns.rest.common.SimpleObject)
+2019-02-06 15:03:29.863  INFO 35701 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-06 15:03:29.863  INFO 35701 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-06 15:03:29.895  INFO 35701 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-06 15:03:29.895  INFO 35701 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-06 15:03:30.089  INFO 35701 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in defaultControllerExceptionHandler
+2019-02-06 15:03:30.089  INFO 35701 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalExceptionHandler
+2019-02-06 15:03:30.394  INFO 35701 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-02-06 15:03:30.396  INFO 35701 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-02-06 15:03:30.401  INFO 35701 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-02-06 15:03:30.444  INFO 35701 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-02-06 15:03:30.448  INFO 35701 --- [main] c.s.guns.rest.GunsRestApplication        : Started GunsRestApplication in 4.847 seconds (JVM running for 5.778)
+2019-02-06 15:06:13.418  INFO 35701 --- [Thread-13] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1bd4fdd: startup date [Wed Feb 06 15:03:26 CST 2019]; root of context hierarchy
+2019-02-06 15:06:13.449  INFO 35701 --- [Thread-13] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-02-06 15:06:13.451  INFO 35701 --- [Thread-13] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-02-06 15:06:13.473  INFO 35701 --- [Thread-13] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-02-06 15:06:38.903  INFO 35727 --- [main] c.s.guns.rest.GunsRestApplication        : Starting GunsRestApplication on localhost with PID 35727 (/Users/smniuhe/IdeaProjects/guns-memcached/guns-rest/target/classes started by mac in /Users/smniuhe/IdeaProjects/guns-memcached)
+2019-02-06 15:06:38.912  INFO 35727 --- [main] c.s.guns.rest.GunsRestApplication        : No active profile set, falling back to default profiles: default
+2019-02-06 15:06:39.068  INFO 35727 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2dd0f797: startup date [Wed Feb 06 15:06:39 CST 2019]; root of context hierarchy
+2019-02-06 15:06:40.127  INFO 35727 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'paginationInterceptor' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=mybatisPlusConfig; factoryMethodName=paginationInterceptor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/guns/rest/config/MybatisPlusConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=cn.stylefeng.roses.core.config.MybaitsPlusAutoConfiguration; factoryMethodName=paginationInterceptor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/roses/core/config/MybaitsPlusAutoConfiguration.class]]
+2019-02-06 15:06:40.524  INFO 35727 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'error' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=defaultErrorView; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/error/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=cn.stylefeng.roses.core.config.WebAutoConfiguration; factoryMethodName=error; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/roses/core/config/WebAutoConfiguration.class]]
+2019-02-06 15:06:40.525  INFO 35727 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'requestMappingHandlerAdapter' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration; factoryMethodName=requestMappingHandlerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=cn.stylefeng.roses.core.config.WebAutoConfiguration; factoryMethodName=requestMappingHandlerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/roses/core/config/WebAutoConfiguration.class]]
+2019-02-06 15:06:42.292  INFO 35727 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-02-06 15:06:42.328  INFO 35727 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-06 15:06:42.328  INFO 35727 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2019-02-06 15:06:42.336  INFO 35727 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/smniuhe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-02-06 15:06:42.692  INFO 35727 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-06 15:06:42.695  INFO 35727 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3627 ms
+2019-02-06 15:06:42.986  INFO 35727 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-02-06 15:06:42.993  INFO 35727 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-06 15:06:42.994  INFO 35727 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-06 15:06:42.994  INFO 35727 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-06 15:06:42.994  INFO 35727 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-06 15:06:42.994  INFO 35727 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'jwtAuthenticationTokenFilter' to: [/*]
+2019-02-06 15:06:43.919  INFO 35727 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-02-06 15:06:44.850  INFO 35727 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2dd0f797: startup date [Wed Feb 06 15:06:39 CST 2019]; root of context hierarchy
+2019-02-06 15:06:44.987  INFO 35727 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-06 15:06:45.074  INFO 35727 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/auth]}" onto public org.springframework.http.ResponseEntity<?> cn.stylefeng.guns.rest.modular.auth.controller.AuthController.createAuthenticationToken(cn.stylefeng.guns.rest.modular.auth.controller.dto.AuthRequest)
+2019-02-06 15:06:45.079  INFO 35727 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public org.springframework.http.ResponseEntity cn.stylefeng.guns.rest.modular.example.ExampleController.hello(cn.stylefeng.guns.rest.common.SimpleObject)
+2019-02-06 15:06:45.080  INFO 35727 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/housemgr/test]}" onto public void cn.stylefeng.guns.rest.modular.house.HouseController.test(java.lang.String)
+2019-02-06 15:06:45.085  INFO 35727 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-06 15:06:45.087  INFO 35727 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-06 15:06:45.157  INFO 35727 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-06 15:06:45.157  INFO 35727 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-06 15:06:45.525  INFO 35727 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in defaultControllerExceptionHandler
+2019-02-06 15:06:45.526  INFO 35727 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalExceptionHandler
+2019-02-06 15:06:46.049  INFO 35727 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-02-06 15:06:46.052  INFO 35727 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-02-06 15:06:46.065  INFO 35727 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-02-06 15:06:46.143  INFO 35727 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-02-06 15:06:46.153  INFO 35727 --- [main] c.s.guns.rest.GunsRestApplication        : Started GunsRestApplication in 8.812 seconds (JVM running for 17.26)
+2019-02-06 15:07:06.553  INFO 35727 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-02-06 15:07:06.553  INFO 35727 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-06 15:07:06.587  INFO 35727 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+2019-02-06 15:10:41.582  WARN 35727 --- [http-nio-8080-exec-6] ssPathScanningCandidateComponentProvider : No MyBatis mapper was found in '[cn.stylefeng.guns.rest.*.dao, cn.stylefeng.guns.rest.common.persistence.dao]' package. Please check your configuration.
+2019-02-06 15:10:41.647  WARN 35727 --- [http-nio-8080-exec-6] ssPathScanningCandidateComponentProvider : No MyBatis mapper was found in '[**.mapper]' package. Please check your configuration.
+2019-02-06 15:11:17.045  INFO 35727 --- [Thread-20] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2dd0f797: startup date [Wed Feb 06 15:06:39 CST 2019]; root of context hierarchy
+2019-02-06 15:11:17.071  INFO 35727 --- [Thread-20] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-02-06 15:11:17.073  INFO 35727 --- [Thread-20] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-02-06 15:11:17.093  INFO 35727 --- [Thread-20] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-02-06 15:11:28.929  INFO 35752 --- [main] c.s.guns.rest.GunsRestApplication        : Starting GunsRestApplication on localhost with PID 35752 (/Users/smniuhe/IdeaProjects/guns-memcached/guns-rest/target/classes started by mac in /Users/smniuhe/IdeaProjects/guns-memcached)
+2019-02-06 15:11:28.935  INFO 35752 --- [main] c.s.guns.rest.GunsRestApplication        : No active profile set, falling back to default profiles: default
+2019-02-06 15:11:29.073  INFO 35752 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30d25c03: startup date [Wed Feb 06 15:11:29 CST 2019]; root of context hierarchy
+2019-02-06 15:11:30.293  INFO 35752 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'paginationInterceptor' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=mybatisPlusConfig; factoryMethodName=paginationInterceptor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/guns/rest/config/MybatisPlusConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=cn.stylefeng.roses.core.config.MybaitsPlusAutoConfiguration; factoryMethodName=paginationInterceptor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/roses/core/config/MybaitsPlusAutoConfiguration.class]]
+2019-02-06 15:11:30.667  INFO 35752 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'error' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=defaultErrorView; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/error/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=cn.stylefeng.roses.core.config.WebAutoConfiguration; factoryMethodName=error; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/roses/core/config/WebAutoConfiguration.class]]
+2019-02-06 15:11:30.668  INFO 35752 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'requestMappingHandlerAdapter' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration; factoryMethodName=requestMappingHandlerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=cn.stylefeng.roses.core.config.WebAutoConfiguration; factoryMethodName=requestMappingHandlerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/roses/core/config/WebAutoConfiguration.class]]
+2019-02-06 15:11:33.076  INFO 35752 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-02-06 15:11:33.116  INFO 35752 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-06 15:11:33.116  INFO 35752 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2019-02-06 15:11:33.124  INFO 35752 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/smniuhe/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-02-06 15:11:33.503  INFO 35752 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-06 15:11:33.503  INFO 35752 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4430 ms
+2019-02-06 15:11:33.751  INFO 35752 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-02-06 15:11:33.758  INFO 35752 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-06 15:11:33.759  INFO 35752 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-06 15:11:33.759  INFO 35752 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-06 15:11:33.759  INFO 35752 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-06 15:11:34.820  INFO 35752 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-02-06 15:11:35.852  INFO 35752 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30d25c03: startup date [Wed Feb 06 15:11:29 CST 2019]; root of context hierarchy
+2019-02-06 15:11:36.019  INFO 35752 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-06 15:11:36.139  INFO 35752 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/auth]}" onto public org.springframework.http.ResponseEntity<?> cn.stylefeng.guns.rest.modular.auth.controller.AuthController.createAuthenticationToken(cn.stylefeng.guns.rest.modular.auth.controller.dto.AuthRequest)
+2019-02-06 15:11:36.143  INFO 35752 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public org.springframework.http.ResponseEntity cn.stylefeng.guns.rest.modular.example.ExampleController.hello(cn.stylefeng.guns.rest.common.SimpleObject)
+2019-02-06 15:11:36.145  INFO 35752 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/housemgr/test]}" onto public void cn.stylefeng.guns.rest.modular.house.HouseController.test(java.lang.String)
+2019-02-06 15:11:36.155  INFO 35752 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-06 15:11:36.156  INFO 35752 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-06 15:11:36.219  INFO 35752 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-06 15:11:36.219  INFO 35752 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-06 15:11:36.555  INFO 35752 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in defaultControllerExceptionHandler
+2019-02-06 15:11:36.555  INFO 35752 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalExceptionHandler
+2019-02-06 15:11:37.122  INFO 35752 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-02-06 15:11:37.124  INFO 35752 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-02-06 15:11:37.134  INFO 35752 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-02-06 15:11:37.215  INFO 35752 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-02-06 15:11:37.235  INFO 35752 --- [main] c.s.guns.rest.GunsRestApplication        : Started GunsRestApplication in 10.134 seconds (JVM running for 18.949)
+2019-02-06 15:11:42.679  INFO 35752 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-02-06 15:11:42.679  INFO 35752 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-06 15:11:42.713  INFO 35752 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 34 ms
+2019-02-06 15:42:13.422  INFO 35752 --- [Thread-20] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30d25c03: startup date [Wed Feb 06 15:11:29 CST 2019]; root of context hierarchy
+2019-02-06 15:42:13.498  INFO 35752 --- [Thread-20] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-02-06 15:42:13.501  INFO 35752 --- [Thread-20] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-02-06 15:42:13.526  INFO 35752 --- [Thread-20] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
